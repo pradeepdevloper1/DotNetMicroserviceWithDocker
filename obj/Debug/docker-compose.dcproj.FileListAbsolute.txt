@@ -47,3 +47,14 @@ E:\Backend\DemoMicroserviceSolution\bin\Debug\K4os.Hash.xxHash.dll
 E:\Backend\DemoMicroserviceSolution\bin\Debug\System.Windows.Extensions.dll
 E:\Backend\DemoMicroserviceSolution\bin\Debug\System.Security.Cryptography.ProtectedData.dll
 E:\Backend\DemoMicroserviceSolution\bin\Debug\ProductWebApi.pdb
+E:\Backend\DemoMicroserviceSolution\bin\Debug\OrderWebApi.deps.json
+E:\Backend\DemoMicroserviceSolution\bin\Debug\OrderWebApi.runtimeconfig.json
+E:\Backend\DemoMicroserviceSolution\bin\Debug\OrderWebApi.staticwebassets.endpoints.json
+E:\Backend\DemoMicroserviceSolution\bin\Debug\OrderWebApi.exe
+E:\Backend\DemoMicroserviceSolution\bin\Debug\OrderWebApi.dll
+E:\Backend\DemoMicroserviceSolution\bin\Debug\MongoDB.Bson.dll
+E:\Backend\DemoMicroserviceSolution\bin\Debug\MongoDB.Driver.dll
+E:\Backend\DemoMicroserviceSolution\bin\Debug\DnsClient.dll
+E:\Backend\DemoMicroserviceSolution\bin\Debug\SharpCompress.dll
+E:\Backend\DemoMicroserviceSolution\bin\Debug\Snappier.dll
+E:\Backend\DemoMicroserviceSolution\bin\Debug\OrderWebApi.pdb

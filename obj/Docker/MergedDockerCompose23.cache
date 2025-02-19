@@ -1,0 +1,74 @@
+name: dockercompose18060191729105504283
+services:
+  customerdb:
+    container_name: customer-db
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Passw0rd
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "18001"
+        protocol: tcp
+  customerwebapi:
+    build:
+      context: E:\Backend\DemoMicroserviceSolution
+      dockerfile: CustomerWebApi/Dockerfile
+    container_name: customer-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "80"
+      DB_HOST: customerdb
+      DB_NAME: dms_customer
+      DB_SA_PASSWORD: Passw0rd
+    image: customerwebapi
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "18002"
+        protocol: tcp
+      - mode: ingress
+        target: 80
+        protocol: tcp
+  productdb:
+    container_name: product-db
+    environment:
+      MYSQL_ROOT_PASSWORD: Passw0rd
+    image: mysql:8.0.29-oracle
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 3306
+        published: "18003"
+        protocol: tcp
+  productwebapi:
+    build:
+      context: E:\Backend\DemoMicroserviceSolution
+      dockerfile: ProductWebApi/Dockerfile
+    container_name: product-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "80"
+      DB_HOST: productdb
+      DB_NAME: dms_product
+      DB_SA_PASSWORD: Passw0rd
+    image: productwebapi
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "8004"
+        protocol: tcp
+      - mode: ingress
+        target: 80
+        protocol: tcp
+networks:
+  backend:
+    name: dockercompose18060191729105504283_backend
