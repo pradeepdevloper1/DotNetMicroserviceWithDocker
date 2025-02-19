@@ -1,0 +1,22 @@
+http://localhost:5062/api/customer
+
+POST
+http://localhost:5062/api/customer
+{
+"CustomerName":"Pradeep",
+"MobileNumber":"8383778382",
+"Email":"Pradeepdeveloper1@gmail.com",
+}
+
+…or create a new repository on the command line
+echo "# DotNetMicroserviceWithDocker" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/pradeepdevloper1/DotNetMicroserviceWithDocker.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/pradeepdevloper1/DotNetMicroserviceWithDocker.git
+git branch -M main
+git push -u origin main
