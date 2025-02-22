@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{622CA240-F431-468E-AA98-4C4E0ABCADA8}"
+	ProjectSection(SolutionItems) = preProject
+		DemoMicroserviceSolution.postman_collection.json = DemoMicroserviceSolution.postman_collection.json
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerWebApi", "CustomerWebApi\CustomerWebApi.csproj", "{87A3AAD2-4B99-44E0-B32A-BC2C2D9CA292}"
 EndProject
@@ -14,6 +17,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderWebApi", "OrderWebApi\OrderWebApi.csproj", "{CC5D2B3C-54F0-46C0-BF2D-EFB03DBF5BB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{24BDF817-1CFA-43A0-971F-A2AC7687E6B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{093F7DE0-12BD-40E9-884D-21269441252F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +54,6 @@ Global
 		{87A3AAD2-4B99-44E0-B32A-BC2C2D9CA292} = {622CA240-F431-468E-AA98-4C4E0ABCADA8}
 		{74E96ED8-C0DF-41A7-AA35-41B9397750E0} = {622CA240-F431-468E-AA98-4C4E0ABCADA8}
 		{CC5D2B3C-54F0-46C0-BF2D-EFB03DBF5BB6} = {622CA240-F431-468E-AA98-4C4E0ABCADA8}
-		{24BDF817-1CFA-43A0-971F-A2AC7687E6B5} = {622CA240-F431-468E-AA98-4C4E0ABCADA8}
+		{24BDF817-1CFA-43A0-971F-A2AC7687E6B5} = {093F7DE0-12BD-40E9-884D-21269441252F}
 	EndGlobalSection
 EndGlobal
